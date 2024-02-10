@@ -1,0 +1,104 @@
+#navbarColor01 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/**/
+
+
+
+/*logo*/
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+
+.overlay-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.image-text-overlay {
+  position: relative;
+  width: 100%;
+}
+
+.image-text-overlay img {
+  width: 100%;
+  height: 250px;
+}
+/*quienes somos*/
+.nosotros {
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rosybrown; 
+  text-align: center;
+}
+/*Categoria*/
+.categorias h1 {
+  text-align: center;
+}
+
+.text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.text-block {
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rosybrown; 
+}
+
+.bonoesCategoria {
+  flex-direction: row;
+  border-bottom-color: black;
+
+}
+.imagenRopa{  
+  position: relative;
+  width: 400px;
+}
+.text-contactos {
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rosybrown; 
+}
+
+/* responsive*/
+@media (max-width: 768px) {
+  .overlay-text {
+    padding: 10px;
+  }
+
+  .overlay-text h1 {
+    font-size: 2rem;
+  }
+
+  .overlay-text p {
+    font-size: 1rem;
+  }
+}
