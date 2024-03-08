@@ -20,9 +20,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav me-auto">          
+        <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
+            <a class="nav-link" href="nosotros.html">Contactanos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ropa.html">Ropa</a>
@@ -37,26 +37,52 @@
       </div>
     </div>
   </nav>
-  <!--Nosotros-->
-  <div>
-    <p>
-    <h1>Quiénes somos</h1>
-    <p>Nuestra empresa dedicada a la venta de ropa se enorgullece de ofrecer una experiencia única en moda y estilo para
-      nuestros clientes. Desde nuestro modesto inicio, nos hemos comprometido a proporcionar prendas de alta calidad que
-      reflejen las últimas tendencias y el mejor diseño. Nos esforzamos por ser más que una simple tienda; queremos ser
-      tu destino favorito para encontrar prendas que te hagan sentir seguro y a la moda en cualquier ocasión.
+  <br>
+  <!-- formulario -->
+  <form class="formulario" onsubmit="return enviarFormulario()">
+    <label for="nombre">Nombre :</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-      En nuestro amplio catálogo, encontrarás una cuidadosa selección de prendas que van desde lo clásico hasta lo más
-      vanguardista, cubriendo todas las necesidades de moda para hombres, mujeres y niños. Nos mantenemos al tanto de
-      las últimas tendencias y colaboramos con diseñadores talentosos para ofrecerte productos exclusivos que no
-      encontrarás en ningún otro lugar.
+    <label for="apellido">Apellido :</label>
+    <input type="text" id="apellido" name="apellido" required>
 
-      Además de nuestro compromiso con la moda, también valoramos la satisfacción del cliente sobre todo. Nuestro equipo
-      está dedicado a brindarte un servicio excepcional, desde ayudarte a encontrar la talla perfecta hasta resolver
-      cualquier duda o inquietud que puedas tener. Tu felicidad y confianza en nosotros son nuestra máxima prioridad.
-    </p>
-    </p>
-  </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="sexo" id="hombre" value="hombre" required>
+      <label class="form-check-label" for="hombre">
+        Hombre
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="sexo" id="mujer" value="mujer">
+      <label class="form-check-label" for="mujer">
+        Mujer
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="sexo" id="gays" value="gays">
+      <label class="form-check-label" for="gays">
+        32 tipos de gays
+      </label>
+    </div>
+
+    <label for="product">¿Cuál de nuestros productos le interesaría?</label>
+    <input type="text" id="product" name="product" required>
+
+    <label for="additional-info">Cuéntenos más sobre lo que le gustaría:</label>
+    <textarea id="additional-info" name="additional-info" required></textarea>
+
+    <label for="phone">Número de teléfono:</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="date">Fecha disponible para una llamada:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="email">Dirección de correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <input type="submit" value="Enviar">
+  </form>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

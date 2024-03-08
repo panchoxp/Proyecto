@@ -12,7 +12,7 @@
 
 <body>
   <!--Barra-->
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" >
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Empresa comercial</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
@@ -20,9 +20,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav me-auto">          
+        <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
+            <a class="nav-link" href="nosotros.html">Contactanos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ropa.html">Ropa</a>
@@ -54,7 +54,7 @@
     <p>Somos una empresa ecuatoriana que cree e invierte dentro y fuera de nuestro país.
       Nos desarrollamos en las áreas comercial, industrial e inmobiliaria, con presencia
       en Ecuador y 5 países de la región.</p>
-    <button class="btn" onclick="window.location.href='nosotros.html'">Ver más</button>
+    <button class="btn" onclick="window.location.href='nosotros.html'">Contactanos</button>
     </p>
   </div>
   <!--Categorias-->
@@ -85,7 +85,7 @@
     </div>
   </div>
 
-  <!--Contacto-->
+  <!--mas informacion-->
   <section class="navbar-expand-lg bg-primary ">
     <div class="container-contactos">
       <div class="grid gap-6 items-center">
@@ -93,14 +93,14 @@
           <div class="space-y-2">
             <h1
               class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
-              Contactanos
+              Para mas información
             </h1>
           </div>
           <div class="w-full max-w-sm space-y-2 mx-auto">
             <form class="flex space-x-2">
               <input type="email"
                 class="flex h-10 w-full rounded-md border px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1 bg-gray-800 text-white border-gray-900"
-                placeholder="Ingresa tu correo" />
+                placeholder="Ingrese su correo" />
               <button
                 class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-white text-black"
                 type="submit">
@@ -108,11 +108,79 @@
               </button>
             </form>
             <p class="text-xs text-zinc-200 dark:text-zinc-100">
-              Para mas informacion revisa.
-              <a class="underline underline-offset-2 text-white" href="#" rel="ugc">
-                Terms &amp; Conditions
+              <a class="underline underline-offset-2 text-white" href="#" rel="ugc" id="mostrarTerminos">
+                Términos &amp; Condiciones
               </a>
             </p>
+          </div>
+          <!-- Ventana terminos y condiciones -->
+          <div id="modalTerminos" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="font-weight: bold;">Términos & Condiciones</h2>
+              <p>¡Bienvenida a nuestra tienda de ropa femenina! Estamos encantados de que hayas elegido nuestros
+                productos para realzar tu estilo y belleza. Antes de realizar una compra, te recomendamos leer
+                detenidamente nuestros términos y condiciones para garantizar una experiencia de compra satisfactoria.
+                <br><br>
+                1.Aceptación de los Términos y Condiciones
+                <br>
+              <p class="textTerminos">Al realizar una compra en nuestra tienda en línea, aceptas automáticamente los términos y condiciones
+                establecidos aquí. Si no estás de acuerdo con alguna parte de estos términos, te pedimos que no utilices
+                nuestro sitio web.</p>
+              <br>
+              2.Productos y Precios
+              <br>
+              <p class="textTerminos">Nos esforzamos por ofrecerte productos de la más alta calidad al mejor precio posible. Sin embargo, nos
+                reservamos el derecho de modificar los precios y la disponibilidad de los productos en cualquier momento
+                sin previo aviso.</p>
+              <br>
+              3.Envíos y Entregas
+              <br>
+              <p class="textTerminos">Procesaremos tu pedido dentro de un plazo de [X] días hábiles después de recibir el pago. El tiempo de
+                entrega puede variar según tu ubicación y la disponibilidad de los productos. Te proporcionaremos un
+                número de seguimiento para que puedas rastrear tu pedido en todo momento.
+              </p>
+              <br>
+              4.Cambios y Devoluciones
+              <br>
+              <p class="textTerminos">
+                Aceptamos cambios y devoluciones dentro de los [X] días posteriores a la recepción de tu pedido, siempre
+                que los productos estén en su estado original, sin usar y con las etiquetas intactas. Por favor,
+                consulta nuestra política de cambios y devoluciones completa en nuestro sitio web para obtener más
+                detalles.
+              </p>
+              <br>
+              5.Privacidad y Seguridad
+              <br>
+              <p class="textTerminos">
+                Respetamos tu privacidad y nos comprometemos a proteger la información que nos proporcionas. Toda la
+                información personal que recopilamos se utiliza únicamente para procesar tus pedidos y mejorar tu
+                experiencia de compra. Consulta nuestra política de privacidad para obtener más información sobre cómo
+                manejamos tus datos.
+              </p>
+              <br>
+              6.Propiedad Intelectual
+              <br>
+              <p  class="textTerminos">Todos los derechos de propiedad intelectual relacionados con los productos y contenido de nuestro sitio
+                web son propiedad exclusiva de nuestra empresa. No está permitido utilizar, copiar o distribuir nuestro
+                contenido sin nuestro consentimiento previo por escrito.
+              </p>
+              <br>
+              7.Contacto
+              <br>
+             <p class="textTerminos"> Si tienes alguna pregunta, inquietud o comentario sobre nuestros términos y condiciones, no dudes en
+              ponerte en contacto con nuestro equipo de atención al cliente. Estamos aquí para ayudarte en cualquier
+              momento.</p>
+              Gracias por elegirnos como tu destino de compras de moda femenina. Esperamos que disfrutes de tu
+              experiencia de compra con nosotros.
+              <hr>
+              Recuerda que estos términos y condiciones son solo un ejemplo y pueden adaptarse según las políticas
+              específicas de tu empresa y las leyes aplicables en tu país. Es recomendable consultar con un
+              profesional legal para asegurarse de que tus términos y condiciones cumplan con todos los requisitos
+              legales necesarios.
+              </p>
+              <button id="aceptar">Aceptar</button>
+            </div>
           </div>
           <!--Redes sociales-->
           <ul class="example-2">
@@ -167,7 +235,7 @@
   </section>
 
 
-
+  <script src="js/index.js"></script>
 </body>
 
 </html>

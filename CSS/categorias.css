@@ -1,217 +1,221 @@
 .product-card {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .product-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .product-info {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .product-name {
-    margin-top: 0;
-  }
-  
-  .product-rating {
-    color: #f5a623;
-    font-size: 1.5em;
-  }
-  
-  .product-price {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .add-to-cart-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  Please note that this is just a simplified example, and the actual HTML and CSS code for the given context might be more complex and contain additional elements, classes, and styles.
-  
-  Is this conversation helpful so far?
-  
-  
-  
-  codigo de esta pagina web
-  
-  Edit
-  
-  Based on the provided context, here's a more complete HTML and CSS code for a product page with filters:
-  
-  html
-  Edit
-  Run
-  Download
-  Copy code
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Nueva Colección Steve Madden</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Nueva Colección Steve Madden</h1>
-      <div class="filters">
-        <button class="filter-button" data-filter="all">Todos</button>
-        <button class="filter-button" data-filter="2-colors">2 Colores</button>
-      </div>
-      <div class="products">
-        <div class="product 2-colors">
-          <img src="product-image-url" alt="Producto 2 Colores" class="product-image" />
-          <h3 class="product-name">SPECTATOR WHITE / WHITE</h3>
-          <div class="product-price">$129.00</div>
-        </div>
-        <div class="product 2-colors">
-          <img src="product-image-url" alt="Producto 2 Colores" class="product-image" />
-          <h3 class="product-name">SPECTATOR BLACK / BLACK</h3>
-          <div class="product-price">$129.00</div>
-        </div>
-        <div class="product reverb-black">
-          <img src="product-image-url" alt="Producto Reverb Black" class="product-image" />
-          <h3 class="product-name">REVERB BLACK PATENT</h3>
-          <div class="product-price">$129.00</div>
-        </div>
-      </div>
-    </div>
-    <script src="scripts.js"></script>
-  </body>
-  </html>
-  And the corresponding CSS code:
-  
-  css
-  Edit
-  Download
-  Copy code
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .filters {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .filter-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .product {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-  }  
-  
-  
-  .product-name {
-    margin-top: 0;
-  }
-  
-  .product-price {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  /**/
-  .radio-input {
-    display: flex;
-    scale: 0.15;
-    transform: rotate(180deg);
-  }
-  
-  .star {
-    margin: 1em;
-    appearance: none;
-    --color: black;
-    border-left: 6.4721359549996em solid transparent;
-    border-right: 6.4721359549996em solid transparent;
-    border-bottom: 4em solid var(--color);
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.product-name {
+  margin-top: 0;
+}
+
+.product-rating {
+  color: #f5a623;
+  font-size: 1.5em;
+}
+
+.product-price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+Please note that this is just a simplified example,
+and the actual HTML and CSS code for the given context might be more complex and contain additional elements,
+classes,
+and styles. Is this conversation helpful so far? codigo de esta pagina web Edit Based on the provided context,
+here's a more complete HTML and CSS code for a product page with filters:
+
+
+html Edit Run Download Copy code < !DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="styles.css"><title>Nueva Colección Steve Madden</title></head><body><div class="container"><h1>Nueva Colección Steve Madden</h1><div class="filters"><button class="filter-button" data-filter="all">Todos</button><button class="filter-button" data-filter="2-colors">2 Colores</button></div><div class="products"><div class="product 2-colors"><img src="product-image-url" alt="Producto 2 Colores" class="product-image" /><h3 class="product-name">SPECTATOR WHITE / WHITE</h3><div class="product-price">$129.00</div></div><div class="product 2-colors"><img src="product-image-url" alt="Producto 2 Colores" class="product-image" /><h3 class="product-name">SPECTATOR BLACK / BLACK</h3><div class="product-price">$129.00</div></div><div class="product reverb-black"><img src="product-image-url" alt="Producto Reverb Black" class="product-image" /><h3 class="product-name">REVERB BLACK PATENT</h3><div class="product-price">$129.00</div></div></div></div><script src="scripts.js"></script></body></html>And the corresponding CSS code: css Edit Download Copy code body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.product-name {
+  margin-top: 0;
+}
+
+.product-price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/**/
+.radio-input {
+  display: flex;
+  scale: 0.15;
+  transform: rotate(180deg);
+}
+
+.star {
+  margin: 1em;
+  appearance: none;
+  --color: black;
+  border-left: 6.4721359549996em solid transparent;
+  border-right: 6.4721359549996em solid transparent;
+  border-bottom: 4em solid var(--color);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.star:before {
+  content: "";
+  border-left: 6.4721359549996em solid transparent;
+  border-right: 6.4721359549996em solid transparent;
+  border-top: 4em solid var(--color);
+  position: absolute;
+  left: -6.4721359549996em;
+  transform: rotate(108deg);
+}
+
+.star:after {
+  content: "";
+  border-left: 6.4721359549996em solid transparent;
+  border-right: 6.4721359549996em solid transparent;
+  border-top: 4em solid var(--color);
+  position: absolute;
+  left: -6.4721359549996em;
+  transform: rotate(253deg);
+}
+
+.radio-input>.star:hover~.star,
+.radio-input>.star:hover,
+.radio-input>.star:checked~.star,
+.radio-input>.star:checked {
+  --color: yellow;
+}
+
+.radio-input>.star:checked~.star,
+.radio-input>.star:checked {
+  animation: rotate 0.5s linear forwards;
+  transform: rotate(360deg);
+  transition: transform 0.3s;
+}
+
+@keyframes rotate {
+  0% {
     transform: rotate(0deg);
-    cursor: pointer;
   }
-  
-  .star:before {
-    content: "";
-    border-left: 6.4721359549996em solid transparent;
-    border-right: 6.4721359549996em solid transparent;
-    border-top: 4em solid var(--color);
-    position: absolute;
-    left: -6.4721359549996em;
-    transform: rotate(108deg);
+
+  50% {
+    scale: 1.5;
   }
-  
-  .star:after {
-    content: "";
-    border-left: 6.4721359549996em solid transparent;
-    border-right: 6.4721359549996em solid transparent;
-    border-top: 4em solid var(--color);
-    position: absolute;
-    left: -6.4721359549996em;
-    transform: rotate(253deg);
-  }
-  
-  .radio-input > .star:hover ~ .star,
-  .radio-input > .star:hover,
-  .radio-input > .star:checked ~ .star,
-  .radio-input > .star:checked {
-    --color: yellow;
-  }
-  
-  .radio-input > .star:checked ~ .star,
-  .radio-input > .star:checked {
-    animation: rotate 0.5s linear forwards;
+
+  100% {
     transform: rotate(360deg);
-    transition: transform 0.3s;
   }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      scale: 1.5;
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
+}
+
+/*formulario*/
+/* Estilos para el formulario */
+.formulario {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f2f2f2;  
+}
+
+.formulario form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.formulario input[type="date"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.formulario input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #45a049;
+}
